@@ -1,4 +1,4 @@
-# <Cursos de JavaScript/> 💻🔎
+# Cursos de JavaScript 💻🔎
 
  Primeiros passos com a linguagem JavaScript:
 - Executando JS na máquina local;
