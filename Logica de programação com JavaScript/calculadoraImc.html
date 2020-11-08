@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+
+    <h1>Calculadora de IMC</h1>
+
+    <script src = "pegaNumero.js"></script>
+
+    <script>
+        var	altura	=	pegaNumero("Qual a sua altura?");
+
+        var	peso	=	pegaNumero("Qual o seu peso?");
+
+        var	imc	=	peso/(altura** 2);
+
+        document.write("O	seu	IMC	é	"	+	imc.toFixed(2));
+    </script>
+
+</body>
+</html>

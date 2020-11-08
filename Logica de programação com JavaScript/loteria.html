@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria</title>
+    <h1>Loteria</h1>
+</head>
+<body>
+    <button onclick="jogar()">
+    Jogar
+    </button>
+
+    <script src="./pegaNumero.js"></script>
+    <script src="./js/mostra.js"></script>
+    <script>
+        var jogo = 0;
+
+        var	numeroJogo	=	0
+
+            function jogar() {
+                numeroJogo	=	numeroJogo	+	1;
+                
+                var	numeroMisterioso	=	parseint(Math.random() * 100);
+                console.log(numeroMisterioso)
+
+                var	chute	=	pegaNumero("Chute	qual	é	o	número	misterioso!"); 
+				if	(chute	< 0 || chute > 100)	{
+                    chute = pegaNumero("Número misterioso inválido. Ele estará entre 0 é 100, tente novamente!")
+                }
+
+	}
+    </script>
+
+</body>
+</html>

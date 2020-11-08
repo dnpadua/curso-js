@@ -1,0 +1,14 @@
+<meta	charset="utf-8">
+<h1>Todas	as	copas	do	mundo</h1>
+<script	src="js/pegaPaisCopa.js"></script>
+<script	src="js/libIdade.js"></script>
+<script	src="js/mostra.js"></script>
+
+<script>
+var	anoInicio	=	1930
+var	anoAtual	=	pegaAnoAtual()
+for	(var	anoCopa	=	anoInicio	;	anoCopa	<=	anoAtual	;	anoCopa	=	anoCopa	+	4)	{
+var	paisCopa	=	pegaPaisCopa(anoCopa)
+mostra(`${anoCopa}	–	${paisCopa}`)
+}
+</script>

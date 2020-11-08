@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber vs Carro</title>
+</head>
+<body>
+    <h1>Uber VS Carro</h1>
+
+    <p>Esta	talvez	 seja	uma	das	grandes	dúvidas	do	homem	moderno: <br> Afinal, vale	mais	a	pena	ir	de	carro	ou	de
+        Uber	para	algum	lugar?</p>
+
+    <script src = "pegaNumero.js"></script>
+    <script src="C:\Users\Daniel\Desktop\dn\js\libRelogio.js"></script>
+
+    <script>
+
+        let distancia = pegaNumero("Qual a distância que será percorrida?");
+
+        let autonomia = pegaNumero("Quantos KM seu carro faz por litro?");
+
+        let precoLitroCombustivel = pegaNumero("Qual o preço do litro do combustível?");
+
+        let velocidadeMedia = pegaNumero("Qual velocidade média do carro?");
+
+        let totalEstacionamento = pegaNumero("É estacionamento?");
+
+        let tempoEmHoras = distancia / velocidadeMedia;
+        let tempoEmMinutos = tempoEmHoras * 60;
+        let totalCombustivel = (distancia / autonomia) * precoLitroCombustivel;
+        let totalCarro = totalCombustivel + totalEstacionamento;
+        let totalUber = 2 + distancia * 1.4 + tempoEmMinutos * 0.26;
+
+        let tempoFormatado = formataRelogio(tempoEmMinutos);
+
+        document.write(`
+        <h2>Uber</h2>
+        Tempo: ${tempoFormatado}
+        <br>
+        Total: R$ ${totalUber.toFixed(2).replace(".", ",")}
+        <br>
+        <h2>Carro</h2>
+        Combustível: R$ ${totalCombustivel.toFixed(2).replace(".", ",")}
+        <br>
+        Estacionamento: R$ ${totalEstacionamento.toFixed(2).replace(".", ",")}
+        <br>
+        Carro: R$ ${totalCarro.toFixed(2).replace(".", ",")}
+        `);
+        
+    </script>
+
+</body>
+</html>
