@@ -8,4 +8,3 @@
 console.log(minhaVar);
 //ReferenceError: minhaVar is not defined
 //Variavel não foi 
-
