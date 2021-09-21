@@ -4,4 +4,4 @@ const fiat = ['Doblo', 'Argo', 'Cronos'];
 
 const todasAsMarcas = chevrolet.concat(fiat);
 
-console.log(todasAsMarcas)
+console.log(todasAsMarcas);
