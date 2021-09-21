@@ -12,4 +12,4 @@ const exibeCarroPreco = (modeloDoCarro) => {
     }
 }
 
-console.log(exibeCarroPreco('Onix'));
+console.log(exibeCarroPreco('Argo'));
