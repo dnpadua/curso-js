@@ -21,3 +21,11 @@
 - Entenda o que são laços de repetição e como usá-los;
 - Modifique arrays utilizando métodos do JS moderno (ES6 em diante);
 - Pratique com os conceitos básicos e adquira conhecimentos sólidos.
+
+<strong>Fundamentos do JavaScript: Objetos</strong>
+- Aprenda o que são objetos e por que são importantes;
+- Veja como acessar dados em um objeto, alterar e adicionar com métodos do JS;
+- Entenda o que são propriedades e métodos de um objeto;
+- Crie objetos a partir de funções construtoras;
+- Entenda o conceito de protótipos em JavaScript;
+- Aprenda os conceitos básicos de Orientação a Objetos com JavaScript.
