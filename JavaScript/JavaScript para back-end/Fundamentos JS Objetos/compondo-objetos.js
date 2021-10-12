@@ -8,8 +8,8 @@ const cliente = {
 
 cliente.dependentes = {
     nome: "Percivania",
-    parentesco: "Mâe",
-    dataNasc: "1968"
+    parentesco: "Mãe",
+    dataNasc: "28/10/1968"
 }
 
 console.log(cliente);
